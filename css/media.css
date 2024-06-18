@@ -1,0 +1,326 @@
+@media (max-width: 1366px) {
+	.hero__chess-figure {
+		&:nth-child(6) {
+			right: 44px;
+		}
+	}
+}
+@media (max-width: 1260px) {
+	.transformation__img-box {
+		width: 335px;
+		right: -150px;
+	}
+	.hero__images-citi {
+		object-fit: cover;
+		height: 100%;
+	}
+	.hero__circle {
+		width: 500px;
+		height: 500px;
+	}
+}
+@media (max-width: 1023px) {
+	.transformation__list {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.transformation__item {
+		&:nth-child(3) {
+			grid-row: 1 span;
+		}
+	}
+	.chess-game__title {
+		font-size: 28px;
+	}
+	.participants__img {
+		left: 0;
+	}
+	.chess-game__item {
+		grid-template-columns: 210px 1fr;
+
+		&::before {
+			left: 210px;
+		}
+	}
+	.chess-game__content {
+		margin-left: 0;
+	}
+	.chess-game__img-box {
+		max-width: 335px;
+		max-height: 212px;
+	}
+
+	.link-border {
+		background-color: rgba(255, 255, 255, 0.9);
+		border: none;
+	}
+
+	.title {
+		font-size: 45px;
+	}
+}
+@media (max-width: 767px) {
+	.hero__content {
+		max-width: 335px;
+	}
+	.hero__title {
+		font-size: 36px;
+	}
+	.hero__links {
+		flex-direction: column;
+	}
+	.hero__chess-figure {
+		&:nth-child(6) {
+			display: none;
+		}
+	}
+	.hero__circle {
+		top: 50px;
+	}
+	.chess-game__top,
+	.chess-game__bottom {
+		flex-direction: column;
+	}
+	.chess-game__title {
+		display: contents;
+		span {
+			padding-top: 10px;
+			order: 1;
+		}
+	}
+	.chess-game__bottom {
+		row-gap: 62px;
+	}
+	.chess-game__list {
+		margin-top: 40px;
+		margin-bottom: 37px;
+	}
+	.chess-game__img-box2 {
+		width: 100%;
+		height: 100%;
+		text-align: center;
+		margin-left: 0;
+
+		img:first-child {
+			max-width: 100%;
+			max-height: 374px;
+			object-fit: contain;
+		}
+	}
+	.title {
+		font-size: 36px;
+		line-height: 113%;
+
+		a {
+			margin-left: 0;
+			margin-top: 10px;
+			font-size: 18px;
+		}
+	}
+	.chess-game {
+		padding-block: 51px;
+	}
+	.transformation {
+		padding-block: 69px;
+	}
+	.transformation__list {
+		grid-template-columns: 1fr;
+	}
+	.transformation__item {
+		&:nth-child(7) {
+			grid-column: 1 span;
+			p {
+				max-width: 100%;
+			}
+		}
+	}
+	.transformation__img-box {
+		rotate: -5deg;
+		top: 106px;
+		left: 30px;
+		bottom: auto;
+		right: auto;
+	}
+	.transformation__title {
+		margin-bottom: 170px;
+	}
+	.participants__prev,
+	.participants__next,
+	.participants__pagination {
+		top: auto;
+		bottom: -70px;
+		right: 35%;
+	}
+	.participants__prev {
+		right: 55%;
+	}
+	.participants__pagination {
+		right: 46%;
+		bottom: -60px;
+	}
+}
+
+@media (max-width: 465px) {
+	.chess-game__item {
+		display: flex;
+		flex-direction: column;
+		row-gap: 11px;
+		&::before {
+			display: none;
+		}
+
+		&:nth-child(4) {
+			flex-direction: row;
+		}
+	}
+	.header {
+		padding-block: 18px;
+	}
+	.header__link-logo {
+		img {
+			width: 213px;
+			height: 32px;
+		}
+	}
+	.hero {
+		padding-top: 93px;
+		min-height: 774px;
+	}
+	.hero__content {
+		max-width: 100%;
+	}
+	.hero__title {
+		max-width: 335px;
+	}
+	.hero__description {
+		margin-bottom: 32px;
+	}
+	.hero__link {
+		max-width: 100%;
+		padding: 13px;
+	}
+	.hero__circle {
+		width: 297px;
+		height: 297px;
+		top: 53%;
+		right: 46px;
+	}
+	.hero__images-citi {
+		height: 378px;
+		object-position: 74% bottom;
+	}
+	.hero__chess-figure {
+		&:nth-child(3) {
+			width: 47px;
+			height: 116px;
+			left: 18.4%;
+			bottom: 15%;
+		}
+		&:nth-child(4) {
+			width: 46px;
+			height: 104px;
+			left: 63.7%;
+			bottom: 22%;
+		}
+		&:nth-child(5) {
+			width: 92px;
+			height: 111px;
+			left: 40%;
+		}
+	}
+	.ticker {
+		padding-block: 10px;
+	}
+	.ticker__item {
+		font-size: 16px;
+	}
+	.chess-game__link {
+		font-size: 18px;
+	}
+	.link-border {
+		flex-direction: row;
+		column-gap: 5px;
+	}
+	.transformation__title {
+		margin-bottom: 143px;
+	}
+	.chess-game__item {
+		&:not(:last-child) {
+			padding-bottom: 17px;
+		}
+	}
+	.transformation__list {
+		display: flex;
+		gap: 0;
+		margin-bottom: 27px;
+	}
+	.transformation__item {
+		padding: 0;
+		min-height: 300px;
+
+		&::before {
+			margin-top: 62px;
+			margin-left: 20px;
+		}
+	}
+	.transformation__descr {
+		padding: 62px 20px 20px 0;
+		font-size: 18px;
+	}
+	.transformation__img-box {
+		top: 192px;
+	}
+	.swiper-button-prev,
+	.swiper-button-next {
+		width: 36px;
+		height: 36px;
+		&::after {
+			font-size: 17px;
+		}
+	}
+	.transformation__navigation {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		column-gap: 16px;
+	}
+	.transformation__pagination {
+		width: max-content !important;
+		margin-top: -5px;
+	}
+	.transformation__prev,
+	.transformation__next {
+		position: static;
+		margin-top: auto;
+	}
+	.swiper-pagination-bullet-active {
+		background: var(--color-text);
+	}
+	.participants {
+		padding-top: 54px;
+		padding-bottom: 177px;
+	}
+	.participants__img-box {
+		max-width: 244px;
+	}
+	.participants__title {
+		margin-bottom: 37px;
+	}
+	.participants__img {
+		top: 16px;
+	}
+	.participants__next {
+		bottom: -77px;
+		right: 32.5%;
+	}
+	.participants__prev {
+		bottom: -77px;
+		right: 57%;
+	}
+	.participants__pagination {
+		bottom: -68px;
+		right: 45%;
+	}
+	.footer {
+		padding-bottom: 59px;
+	}
+}
