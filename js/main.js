@@ -24,6 +24,7 @@ if (document.documentElement.clientWidth <= 465) {
 		spaceBetween: 30,
 		pagination: {
 			el: '.transformation__pagination',
+			clickable: true,
 		},
 		navigation: {
 			nextEl: next,
@@ -40,6 +41,11 @@ if (document.documentElement.clientWidth <= 465) {
 
 const swiper2 = new Swiper('.participants__swiper', {
 	slidesPerView: 1,
+	loop: true,
+	autoplay: {
+		delay: 4000,
+		disableOnInteraction: false,
+	},
 	breakpoints: {
 		640: {
 			slidesPerView: 2,
